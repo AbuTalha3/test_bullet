@@ -1,5 +1,5 @@
 def index
-  @posts = Post.includes(:comments)
+  @posts = Post.all
 
   respond_to do |format|
     format.html # index.html.erb
